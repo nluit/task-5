@@ -16,7 +16,7 @@ console.log('---------------------------------------------');
 people.unshift('Matt');
 console.log(people);
 console.log('---------------------------------------------');
-people.push('Nhat dep trai');
+people.push('Nhat');
 console.log(people);
 console.log('---------------------------------------------');
 for (var i = 0; i < people.length; i++) {

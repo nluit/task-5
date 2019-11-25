@@ -1,11 +1,13 @@
-function character(str, pos) {
-    this.str = str;
-    this.pos = pos;
-    this.remove = () => {
-        var newstr = this.str;
-        var newpos = this.pos;
-        return newstr.substring(0, newpos - 1) + newstr.substring(newpos, this.str.length)
-    }
-}
-var string = new character('nhatle', 9);
-console.log(string.remove());
+window.addEventListener('load', function() {
+    var btn = this.document.getElementById('btn');
+
+    btn.addEventListener('click', async function() {
+
+        var pos = document.getElementById('pos').value;
+        var str = document.getElementById('str').value;
+        var newstr = str;
+        var newpos = pos;
+        var result = newstr.substring(0, newpos - 1) + newstr.substring(newpos, str.length)
+        console.log(result);
+    })
+})
